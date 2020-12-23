@@ -5,7 +5,7 @@ import axios from 'axios'
 import { API_URL } from '../../constants/index'
 import CharacterList from '../home/CharacterList'
 
-class HomeScreen extends Component {
+class CharacterScreen extends Component {
   state = {
     characters: [],
   }
@@ -40,4 +40,4 @@ class HomeScreen extends Component {
   }
 }
 
-export default HomeScreen
+export default CharacterScreen
