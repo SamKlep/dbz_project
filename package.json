@@ -1,0 +1,23 @@
+{
+  "name": "dbz_project",
+  "version": "1.0.0",
+  "description": "A Django &amp; React application that follows the anime series DragonBall Z.",
+  "scripts": {
+    "server": "python3 manage.py runserver",
+    "frontend": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run frontend\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SamKlep/dbz_project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SamKlep/dbz_project/issues"
+  },
+  "homepage": "https://github.com/SamKlep/dbz_project#readme",
+  "devDependencies": {
+    "concurrently": "^5.3.0"
+  }
+}
