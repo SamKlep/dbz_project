@@ -10,12 +10,20 @@ const Header = () => {
           <Image src='img/dbz-logo.png' alt='dbz logo' border='0' />
         </Navbar.Brand>
 
-        <Nav className='ml-auto'>
-          <Link className='p-2' to='/characters'>
-            <Nav.Item>Characters</Nav.Item>
+        <Nav className='ml-auto '>
+          <Link
+            className='p-2 header-links text-decoration-none'
+            to='/characters'>
+            <Nav.Item>
+              <h5 className='links-font'>Characters</h5>
+            </Nav.Item>
           </Link>
-          <Link className='p-2' to='/episodes'>
-            <Nav.Item>Episodes</Nav.Item>
+          <Link
+            className='p-2 header-links text-decoration-none'
+            to='/episodes'>
+            <Nav.Item>
+              <h5 className='links-font'>Episodes</h5>
+            </Nav.Item>
           </Link>
         </Nav>
       </Navbar>

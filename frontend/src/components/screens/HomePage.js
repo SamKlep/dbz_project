@@ -25,15 +25,23 @@ const HomePage = () => {
               countries worldwide. It is part of the Dragon Ball media
               franchise.
             </p>
+          </Col>
+        </Row>
+        <Row className='align-items-lg-center mb-5'>
+          <Col>
             <p className='mt-3'>
-              Dragon Ball Z continues the adventures of Goku, who, along with
-              his companions, defend the Earth against villains ranging from
-              aliens (Frieza), androids (Cell) and magical creatures (Majin
-              Buu). While the original Dragon Ball anime followed Goku from
-              childhood to early adulthood, Dragon Ball Z is a continuation of
-              his adult life, but at the same time parallels the life of his
-              son, Gohan, as well as the development of his rival Vegeta.
+              <strong>Dragon Ball Z</strong> continues the adventures of Goku,
+              who, along with his companions, defend the Earth against villains
+              ranging from aliens (Frieza), androids (Cell) and magical
+              creatures (Majin Buu). While the original Dragon Ball anime
+              followed Goku from childhood to early adulthood, Dragon Ball Z is
+              a continuation of his adult life, but at the same time parallels
+              the life of his son, Gohan, as well as the development of his
+              rival Vegeta.
             </p>
+          </Col>
+          <Col className='text-center'>
+            <Image src='img/goku-front.png' fluid />
           </Col>
         </Row>
       </Container>
