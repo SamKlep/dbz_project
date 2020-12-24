@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 import axios from 'axios'
 
 import { API_URL } from '../../constants/index'
-import CharacterList from '../home/CharacterList'
+import CharacterList from '../characters/CharacterList'
 
 class CharacterScreen extends Component {
   state = {

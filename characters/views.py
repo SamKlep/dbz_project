@@ -50,3 +50,4 @@ def character_detail(request, pk):
     elif request.method == 'DELETE':
         character.delete()
         return Response({'message': 'Character was deleted successfully!'}, status=status.HTTP_204_NO_CONTENT)
+

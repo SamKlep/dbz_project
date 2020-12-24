@@ -28,7 +28,7 @@ urlpatterns = [
     url(r'^api/characters/(?P<pk>[0-9]+)$', views.character_detail),
     # path('api/episodes/', include('episodes.urls')),
     url(r'^', include('episodes.urls')),
-    
+
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

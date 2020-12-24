@@ -3,6 +3,7 @@ import HomePage from './components/screens/HomePage'
 import Header from './components/ui/Header'
 import CharacterScreen from './components/screens/CharacterScreen'
 import EpisodesScreen from './components/screens/EpisodesScreen'
+import CharacterItemScreen from './components/screens/CharacterItemScreen'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Switch>
         <Route path='/' component={HomePage} exact />
         <Route path='/characters' component={CharacterScreen} exact />
+        <Route path='/characters/:id' component={CharacterItemScreen} />
         <Route path='/episodes' component={EpisodesScreen} exact />
       </Switch>
     </Router>
