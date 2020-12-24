@@ -26,13 +26,11 @@ class EpisodesScreen extends Component {
     return (
       <Container style={{ marginTop: '20px' }}>
         <Row>
-          <Col>
-            <div className='cards'>
-              <EpisodesList
-                episodes={this.state.episodes}
-                resetState={this.resetState}
-              />
-            </div>
+          <Col lg={6} className='mx-auto'>
+            <EpisodesList
+              episodes={this.state.episodes}
+              resetState={this.resetState}
+            />
           </Col>
         </Row>
       </Container>

@@ -4,6 +4,7 @@ import Header from './components/ui/Header'
 import CharacterScreen from './components/screens/CharacterScreen'
 import EpisodesScreen from './components/screens/EpisodesScreen'
 import CharacterItemScreen from './components/screens/CharacterItemScreen'
+import EpisodeItemScreen from './components/screens/EpisodeItemScreen'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path='/characters' component={CharacterScreen} exact />
         <Route path='/characters/:id' component={CharacterItemScreen} />
         <Route path='/episodes' component={EpisodesScreen} exact />
+        <Route path='/episodes/:id' component={EpisodeItemScreen} />
       </Switch>
     </Router>
   )

@@ -1,16 +1,22 @@
 import React, { Component } from 'react'
-import { Image, Card } from 'react-bootstrap'
+import { ListGroup, ListGroupItem } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 class EpisodesList extends Component {
   render() {
     const episodes = this.props.episodes
-    return episodes.map((episodes) => (
-      <Card className='p-3' key={episodes.id}>
-        <Image fluid src={episodes.image} />
-        <Card.Title>
-          <h3>{episodes.title}</h3>
-        </Card.Title>
-      </Card>
+    return episodes.map((episode) => (
+      <div className='p-3' key={episode.id}>
+        <Link className='text-decoration-none' to={`/episodes/${episode.id}`}>
+          <ListGroup as='ul'>
+            <ListGroupItem className='ch-item' as='li'>
+              <h3 className='text-center'>
+                {episode.id} - {episode.title}
+              </h3>
+            </ListGroupItem>
+          </ListGroup>
+        </Link>
+      </div>
     ))
   }
 }
