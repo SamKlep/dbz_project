@@ -9,23 +9,25 @@ const Header = () => {
         <Navbar.Brand href='/'>
           <Image src='img/dbz-logo.png' alt='dbz logo' border='0' />
         </Navbar.Brand>
-
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
         <Nav className='ml-auto '>
           <Link
-            className='p-2 header-links text-decoration-none'
+            className='header-links text-decoration-none'
             to='/characters'>
             <Nav.Item>
-              <h5 className='links-font'>Characters</h5>
+              <h5 className='links-font p-1'>Characters</h5>
             </Nav.Item>
           </Link>
           <Link
-            className='p-2 header-links text-decoration-none'
+            className='header-links text-decoration-none'
             to='/episodes'>
             <Nav.Item>
-              <h5 className='links-font'>Episodes</h5>
+              <h5 className='links-font p-1'>Episodes</h5>
             </Nav.Item>
           </Link>
         </Nav>
+        </Navbar.Collapse>
       </Navbar>
     </div>
   )

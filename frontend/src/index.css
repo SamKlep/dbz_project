@@ -12,7 +12,7 @@
 }
 
 .links-font {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .cards {
@@ -20,3 +20,5 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
 }
+
+
