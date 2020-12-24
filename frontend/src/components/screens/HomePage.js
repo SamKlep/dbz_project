@@ -29,7 +29,7 @@ const HomePage = () => {
         </Row>
         <Row className='align-items-lg-center mb-5'>
           <Col>
-            <p className='mt-3'>
+            <p className='mt-3 home-font'>
               <strong>Dragon Ball Z</strong> continues the adventures of Goku,
               who, along with his companions, defend the Earth against villains
               ranging from aliens (Frieza), androids (Cell) and magical

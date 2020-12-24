@@ -15,6 +15,10 @@
   font-size: 1.3rem;
 }
 
+.home-font {
+  font-size: 18px;
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -27,4 +31,11 @@
 
 .ch-item {
   border: none !important;
+}
+.card {
+  border: none !important;
+}
+
+.footer {
+  height: 100px;
 }
