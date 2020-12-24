@@ -1,20 +1,20 @@
 import React, { Component } from 'react'
-import { Image, Card } from 'react-bootstrap'
+import { Image, Card, ListGroup, ListGroupItem } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
 class CharacterList extends Component {
   render() {
     const characters = this.props.characters
     return characters.map((character) => (
-      <Card className='p-3' key={character.id}>
-        <Link to={`/characters/${character.id}`}>
-          <Image fluid src={character.image_main} />
-
-          <Card.Title>
-            <h3>{character.name}</h3>
-          </Card.Title>
+      <div className='p-3' key={character.id}>
+        <Link className='text-decoration-none' to={`/characters/${character.id}`}>
+        <ListGroup as='ul'>
+          <ListGroupItem className='ch-item' as='li'>
+          <h3 className='text-center'>{character.id} - {character.name}</h3>
+          </ListGroupItem>
+        </ListGroup>
         </Link>
-      </Card>
+      </div>
     ))
   }
 }

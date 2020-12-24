@@ -26,13 +26,12 @@ class CharacterScreen extends Component {
     return (
       <Container style={{ marginTop: '20px' }}>
         <Row>
-          <Col>
-            <div className='cards'>
+          <Col lg={6} className='mx-auto'>
               <CharacterList
                 characters={this.state.characters}
                 resetState={this.resetState}
               />
-            </div>
+        
           </Col>
         </Row>
       </Container>
