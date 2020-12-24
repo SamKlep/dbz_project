@@ -27,7 +27,7 @@ const EpisodeItemScreen = ({ match }) => {
         </Link>
 
         <div className='container m-auto mb-5'>
-          <Card className='mx-auto mb-5' style={{ width: '36rem' }}>
+          <Card className='mx-auto mb-5 border-none' style={{ width: '36rem' }}>
             <Card.Img
               variant='top'
               src={'http://127.0.0.1:8000' + item.image}

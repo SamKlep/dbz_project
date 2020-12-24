@@ -22,7 +22,9 @@
 }
 
 .ch-item:hover {
-  box-shadow: 3px 3px rgb(255, 174, 0), -1em 0 .4em rgb(175, 175, 175);
+  box-shadow: 3px 3px rgb(255, 174, 0), -1em 0 0.4em rgb(175, 175, 175);
 }
 
-
+.ch-item {
+  border: none !important;
+}
